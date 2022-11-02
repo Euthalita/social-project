@@ -1,0 +1,104 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+body{
+    width: 100vw;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(pacote-d013/pacote-d013/imagens/fundo-madeira.jpg)    
+}
+
+main{
+    position: relative;  
+    height: 100vh; 
+}
+
+section#cel{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width:311px;/*Por que não vai com max-width?*/
+    height: 627px; 
+    background: url(pacote-d013/pacote-d013/imagens/frame-iphone.png) no-repeat;
+}
+
+iframe#tela{
+    position: relative;/*Por que relative? Se parece ser filho em relação ao cel*/
+    top: 80px;
+    left:  22px;
+    height: 470px;
+    width: 267px;
+    
+}
+
+#icons{
+    text-align: left;
+    width: 70px;
+}
+
+#icons img{
+    display: block;
+    border-radius: 50%;
+    width: 45px;
+    margin: 25px;
+    box-sizing: border-box;
+
+}
+
+#icons img:hover{
+    border: 1px white solid;
+    transition: 0.3s, border 0.8s;
+    transform: translate(5px, -5px);
+}
+
+#aviso{
+    position: absolute;
+    display: none;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.808);
+    max-width: 250px;  
+    text-align: center;
+    border:3px solid rgba(0, 0, 255, 0.973);
+    border-radius: 20%;  
+    top: 30%;
+    left: 70%;
+    font-size: 20px;
+}
+
+#frase{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: darkgray;
+}
+
+#msg{
+    position: absolute; 
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.808);
+    max-width: 250px;  
+    text-align: center;
+    border:3px solid rgba(255, 0, 255, 0.973);
+    border-radius: 20%;  
+    top: 30%;
+    left: 70%;
+    font-size: 20px;
+    display:none;
+}
+
+
+
+
+
+
